@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
+
 const singerSchema = new mongoose.Schema(
-    
   {
     fullName: String,
     avatar: String,
@@ -16,7 +16,5 @@ const singerSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-
-
 const Singer = mongoose.model("Singer", singerSchema, "singers");
 export default Singer;
